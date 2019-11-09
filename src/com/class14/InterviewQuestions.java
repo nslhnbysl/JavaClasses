@@ -6,13 +6,24 @@ public class InterviewQuestions {
 
 		//1-Write a program to swap 2 numbers without a temporary variable?Swap 2 strings without a temporary variable?
 		
-		int a=1;
-		int b=2;
+//		int a=1;
+//		int b=2;
+//		
+//		a+=b;
+//		System.out.println(a);
+//		b-=a;
+//		System.out.println(b); 
 		
-		a+=b;
-		System.out.println(a);
-		b-=a;
-		System.out.println(b); 
+		int a=10;
+		int b=20;
+		
+		a=a+b;//30
+		b=a-b;//10
+		a=a-b;//20
+		
+		System.out.println("The value of a "+a); //20
+		System.out.println("The value of b "+b); //10 
+		
 	
 	     String a1 = "Love";  
 	     String b1 = "You";  
@@ -29,23 +40,26 @@ public class InterviewQuestions {
 	        
 	
 
-			int num[] = { 9,90,6,7,5000,4,600,20,3};
-			int largest = num[0];
-			int secondLargest = num[1];
-			
-			for (int i=1; i<num.length; i++)
-	        {
-	            if(largest < num[i])
-	            {
-	                secondLargest = largest;
-	                largest = num[i];
-	            }
-	            else if(secondLargest < num[i]){
-	                secondLargest = num[i];
-	            }
-	        }
-	        System.out.println("Largest : " +largest);
-	        System.out.println("Second Largest : "+secondLargest);
+	    int num[] = { 900, 90, 6, 7, 500, 4, 600, 20, 3 };
+        int largest = num[0];
+        int secondLargest = num[1];
+        for (int i = 1; i < num.length; i++) {
+            if (largest < num[i]) {
+                secondLargest = largest;
+                largest = num[i];
+            } else if (secondLargest < num[i]) {
+                secondLargest = num[i];
+            }
+        }
+        System.out.println("Largest : " + largest);
+        System.out.println("Second Largest : " + secondLargest);
+        int min = num[2];
+        for (int x = 0; x < num.length; x++) {
+            if (num[x] < min) {
+                min = num[x];
+            }
+        }
+        System.out.println("Minumum: " + min);
 			
 	
 	

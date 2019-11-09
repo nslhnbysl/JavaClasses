@@ -19,14 +19,21 @@ public class AllStringMethods {
     str.trim();
     str.charAt(int index);
     str.indexOf(int ch);
+    str.replace();
+    str.replaceAll();
+    str.replaceFirst();
+    str.split(regex, limit)
+    
 		 */
 		
 		
+		String str="Nes?baysal?imran?baysal";
+		String array[]=str.split("\\?",4);
+		for (String string : array) {
+			System.out.println(string);
+		}
 		
-		
-		
-		
-		
+		System.out.println(array.length);
 		
 		
 		
