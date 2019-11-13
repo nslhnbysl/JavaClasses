@@ -39,9 +39,19 @@ public class datadates {
 		System.out.println(s1);
 		
 		
-	    
-	  
-	    
+//	    String name="Abrakadabra";
+//		String nameReverse="";
+//		for(int a=name.length()-1;a>=0;a--) {
+//			//System.out.println(name.charAt(a));
+//			nameReverse=nameReverse+name.charAt(a);
+//			}
+//		System.out.println(nameReverse);
+//		if(name.equalsIgnoreCase(nameReverse)) {
+//			System.out.println("This is a palindrome word");
+//		}else {
+//			System.out.println("This is not a palindrome word");
+//		}
+//	    
 	 
 		
 		
