@@ -11,7 +11,7 @@ public class Car {
   //adding behavior/action-->methods();  all behaviors should be seperate 
    
    void drive() {
-	   System.out.println("Car " +make+ " can drive");
+	  start();
    }
 		
 	void start() {
@@ -22,6 +22,10 @@ public class Car {
 		System.out.println("Car "+make+ " can accelerate");
 	}
 		
-	
+	public static void main(String[] args) {
+		
+		Car car1=new Car();
+		car1.drive();
+	}
 
 }

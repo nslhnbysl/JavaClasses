@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	
 	School student1=new School();
 	student1.studentName="Eric";
-	student1.school="Syntax";
+	student1.school="Syntax ";
 	student1.GPA=3.98;
 	
 	student1.displayInfo();
@@ -16,12 +16,13 @@ public static void main(String[] args) {
 	School student2=new School();
 	student2.studentName="Jamie";
 	student2.GPA=3.90;
-	student2.school="Syntax";
+	student2.school="Syntax Technologies";
 	
 	student1.displayInfo();
 	student2.displayInfo();
 	
-	
+	System.out.println("student1 again");
+	student1.displayInfo();
 }
 
 }

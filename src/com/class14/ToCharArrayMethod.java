@@ -18,7 +18,7 @@ public class ToCharArrayMethod {
 		
 		String str1="Video provides a powerful way to help you prove your point";
 		
-		String[] array1=str.split(" ");//("\\s")
+		String[] array1=str1.split(" ");//("\\s")
 		
 		
 		for(int i=0;i<array1.length;i++) {

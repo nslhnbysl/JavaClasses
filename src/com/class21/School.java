@@ -3,7 +3,9 @@ package com.class21;
 public class School {
 public String studentName;
 public double GPA;
-public String school;
+public static String school;//this variable doesn't belong to objects this variable belongs to class
+                            //if we changed the value on other class and it will change there because it belong there
+
 
 
 
