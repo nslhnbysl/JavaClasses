@@ -29,8 +29,52 @@ public class TestScrum {
 		dev.work();
 		dev.getPaid();
 		dev.code();
-		dev.artifacts="Sptint backlog";
+		dev.artifacts="Sprint backlog";
 		dev.cerenomies="Sprint demo,planning,retro,daily standup";
+		
+		System.out.println("----creating an object of tester class----");
+        
+		Tester test=new Tester();
+		test.salary=150000;
+		test.work();
+		test.getPaid();
+		//test.code();      -->error because this method belongs just developer class
+		test.test();
+		test.artifacts="Sprint backlog";
+		test.cerenomies="Sprint demo,planning,retro,daily standup";
+		
+		System.out.println("----creating an object of ScrumMaster class----");
+		
+		ScrumMaster scrumM=new ScrumMaster();
+		
+		scrumM.salary=8292000;
+		scrumM.artifacts="Sprint backlog";
+		scrumM.cerenomies="Sprint demo,planning,retro,daily standup";
+		scrumM.work();
+		scrumM.coordinateTeam();
+		scrumM.getPaid();
+		
+System.out.println("----creating an object of ProductOwner class----");
+		
+		ProductOwner po=new ProductOwner();
+		
+		po.salary=3802000;
+		po.artifacts="Product backlog,Sprint backlog";
+		po.cerenomies="Sprint demo,planning,retro,daily standup";
+		po.work();
+		po.prioritize();;
+		po.getPaid();
+		
+System.out.println("----creating an object of BussinessAnalyst class----");
+		
+		BussinessAnalyst ba=new BussinessAnalyst();
+		
+		ba.salary=38020;
+		ba.artifacts="Sprint backlog";
+		ba.cerenomies="Sprint demo,planning,retro";
+		ba.work();
+		ba.writeRequirement();;
+		ba.getPaid();	
 		
 }
 	

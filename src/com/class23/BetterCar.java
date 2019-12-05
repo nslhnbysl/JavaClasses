@@ -13,10 +13,11 @@ public class BetterCar {
 			color=carColor;
 			speed=carSpeed;
 			doors=carDoors;
-		}	
-		public void getDetails() {
 			System.out.println("I build "+color+" "+make+" "+model);
 			System.out.println("My car has "+doors+" My car can have speed up to "+speed);
+		}	
+		public void getDetails() {
+			
 		}
 	public static void main(String[] args) {
 	make="BMW";
@@ -26,7 +27,7 @@ public class BetterCar {
 	                                    //through constructor instance variables will get initilized
 	BetterCar bcar1=new BetterCar("X5", "black", 4, 400);
 	
-	bcar1.getDetails();
+	//bcar1.getDetails();
 		
 		
 		

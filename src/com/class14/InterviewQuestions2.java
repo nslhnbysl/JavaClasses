@@ -7,10 +7,10 @@ public class InterviewQuestions2 {
 	public static void main(String[] args) {
 
 		//3 find out how many alpha characters present in a string
-        
+       System.out.println("question 3"); 
 		String str1="Today is the #$%% 15 #$%& Java class";
         
-        System.out.println(str1.replaceAll("[^A-z0-9]", "").length());
+        System.out.println(str1.replaceAll("[^A-Za-z]", "").length());
  
 		
 	//4-how to find out the part of string from a string.what is substring.find number of words in string
@@ -23,18 +23,46 @@ public class InterviewQuestions2 {
 }      
 		System.out.println(array.length);
 		
-	//5-write a java program to reverse string? reverse a string word bye word 
-		
-		String input = "Today is a wonderful day";
-        int length = input.length();
-        String reverse = "";
-        for (int i = length - 1; i >= 0; i--) {
-            reverse = reverse + input.charAt(i);
-        }
-        System.out.println(reverse);
-		
-		
-		
+		// 5-write a java program to reverse string? reverse a string word by word
+
+		String given = "Welcome to the Java class";
+
+		/* to reverse String split(); Step1: split--> array of String Step2: use for
+		 * loop and use decrement to print values
+		 */
+
+		String reversed = "";
+
+		String[] str = given.split("\\s");
+
+		for (int j = str.length - 1; j >= 0; j--) {
+
+			reversed = reversed + str[j] + " ";
+
+		}
+
+		System.out.println(reversed);
+
+		// Write a java program to reverse String?
+
+		// toCharArray(); charAt();
+
+		String given1 = "Today is Java Class";
+        String replaced1 = "";
+        char[] charArray = given1.toCharArray();
+        for (int i = charArray.length - 1; i >= 0; i--) {
+			replaced1 = replaced1 + charArray[i];
+			}
+        System.out.println(replaced1);
+        
+		System.out.println("---Using charAt---");
+		String Word3 = "I Love Java";
+		String reversed2 = "";
+		for (int i = Word3.length() - 1; i >= 0; i--) {
+			reversed2 = reversed2 + Word3.charAt(i);
+			}
+System.out.println(reversed2);
+
     //6-Write a Java Program to find whether a String is palindrome or not?
 		
 		
