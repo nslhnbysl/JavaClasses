@@ -12,7 +12,7 @@ class Monkey extends Animal{
 		System.out.println("I am a monkey");
 	}
 	
-//	      public  void whoAmI() {             -->we cannot override with non static compiler give an error
+//	      public  void whoAmI() {             -->we cannot  override this method with non static modifiers compiler give an error
 //		System.out.println("I am an animal");
 //	}
 }
