@@ -26,6 +26,8 @@ public class Andrei {
 //		int result = elionSon.add3();
 
 //		int result4 = elionSon.add4(5, 7);
+		
+		System.out.println("Hello");
 
 	}
 }

@@ -10,7 +10,7 @@ public class MethodReturnsObj {
 
 	public static void main(String[] args) {
 		
-	Scanner scan=returnScanner();   //we simply screate scanner to use this scanner method 
+	Scanner scan=returnScanner();   //we simply create scanner to use this scanner method 
 	scan.nextLine();
 	List<String>list=returnStringList("Java","My favorite subjects");
 	System.out.println(list);

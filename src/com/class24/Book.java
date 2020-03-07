@@ -3,7 +3,7 @@ package com.class24;
 public class Book extends Student{
 	
 	Book(){
-		this("name","abb");
+		//this("name","abb");
 		System.out.println("this is non argument constructor");
 	}
 	
@@ -16,7 +16,7 @@ public class Book extends Student{
 	
 	public static void main(String[] args) {
 		
-		 Book obj=new Book();
+		 Book obj=new Book("Neslihan","Centreville");
 		 
 		 obj.name="Neslihan";
 		 obj.adress="Centreville";
